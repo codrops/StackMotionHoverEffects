@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Stack Motion Hover Effects | Codrops</title>
+		<meta name="description" content="Item hover effects that reveal a colored stack behind the hovered item" />
+		<meta name="keywords" content="hover effect, reveal, hover, css, animations, anime.js, javascript, motion, ux" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link href="https://fonts.googleapis.com/css?family=Overpass+Mono:400,700" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<script>document.documentElement.className = 'js';</script>
+	</head>
+	<body>
+		<svg class="hidden">
+			<symbol id="icon-arrow" viewBox="0 0 24 24">
+				<title>arrow</title>
+				<polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 "/>
+			</symbol>
+			<symbol id="icon-drop" viewBox="0 0 24 24">
+				<title>drop</title>
+				<path d="M12,21c-3.6,0-6.6-3-6.6-6.6C5.4,11,10.8,4,11.4,3.2C11.6,3.1,11.8,3,12,3s0.4,0.1,0.6,0.3c0.6,0.8,6.1,7.8,6.1,11.2C18.6,18.1,15.6,21,12,21zM12,4.8c-1.8,2.4-5.2,7.4-5.2,9.6c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2C17.2,12.2,13.8,7.3,12,4.8z"/><path d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z"/>
+			</symbol>
+		</svg>
+		<main>
+			<div class="message-mobile">This is a hover effect. Best viewed on desktop.</div>
+			<header class="codrops-header">
+				<div class="codrops-links">
+					<a class="codrops-icon codrops-icon--prev" href="https://tympanus.net/Development/GeekyGlasses/" title="Previous Demo"><svg class="icon icon--arrow"><use xlink:href="#icon-arrow"></use></svg></a>
+					<a class="codrops-icon codrops-icon--drop" href="https://tympanus.net/codrops/?p=30373" title="Back to the article"><svg class="icon icon--drop"><use xlink:href="#icon-drop"></use></svg></a>
+				</div>
+				<h1 class="codrops-header__title">Stack Motion Hover Effects</h1>
+				<a class="github" href="https://github.com/codrops/StackMotionHoverEffects/">/Github</a>
+				<p class="codrops-header__tagline">Decorative motion hover effects for grid items</p>
+				<p class="codrops-header__tagline">Inspired by <a href="http://www.merci-michel.com/projects/">Merci-Michel</a></p>
+			</header>
+			<section class="content">
+				<h2 class="content__title">_001</h2>
+				<div class="grid grid--effect-vega">
+					<a href="#" class="grid__item grid__item--c1">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="img/1.png" alt="Image"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">anaerobic</h3>
+							<div class="column column--left">
+								<span class="column__text">Period</span>
+								<span class="column__text">Subjects</span>
+								<span class="column__text">Result</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">2045</span>
+								<span class="column__text">133456</span>
+								<span class="column__text">Positive</span>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="grid__item grid__item--c2">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="img/2.png" alt="Image"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">exothermic</h3>
+							<div class="column column--left">
+								<span class="column__text">Period</span>
+								<span class="column__text">Subjects</span>
+								<span class="column__text">Result</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">2045</span>
+								<span class="column__text">133456</span>
+								<span class="column__text">Positive</span>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="grid__item grid__item--c3">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="img/3.png" alt="Image"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">diatomic</h3>
+							<div class="column column--left">
+								<span class="column__text">Period</span>
+								<span class="column__text">Subjects</span>
+								<span class="column__text">Result</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">2045</span>
+								<span class="column__text">133456</span>
+								<span class="column__text">Positive</span>
+							</div>
+						</div>
+					</a>
+				</div>
+			</section>
+			<section class="content">
+				<h2 class="content__title">_002</h2>
+				<div class="grid grid--effect-castor">
+					<a href="#" class="grid__item grid__item--c1">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="img/1.png" alt="Image"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">anaerobic</h3>
+							<div class="column column--left">
+								<span class="column__text">Period</span>
+								<span class="column__text">Subjects</span>
+								<span class="column__text">Result</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">2045</span>
+								<span class="column__text">133456</span>
+								<span class="column__text">Positive</span>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="grid__item grid__item--c2">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="img/2.png" alt="Image"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">exothermic</h3>
+							<div class="column column--left">
+								<span class="column__text">Period</span>
+								<span class="column__text">Subjects</span>
+								<span class="column__text">Result</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">2045</span>
+								<span class="column__text">133456</span>
+								<span class="column__text">Positive</span>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="grid__item grid__item--c3">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="img/3.png" alt="Image"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">diatomic</h3>
+							<div class="column column--left">
+								<span class="column__text">Period</span>
+								<span class="column__text">Subjects</span>
+								<span class="column__text">Result</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">2045</span>
+								<span class="column__text">133456</span>
+								<span class="column__text">Positive</span>
+							</div>
+						</div>
+					</a>
+				</div>
+			</section>
+			<section class="content">
+				<h2 class="content__title">_003</h2>
+				<div class="grid grid--effect-hamal">
+					<a href="#" class="grid__item grid__item--c1">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="img/1.png" alt="Image"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">anaerobic</h3>
+							<div class="column column--left">
+								<span class="column__text">Period</span>
+								<span class="column__text">Subjects</span>
+								<span class="column__text">Result</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">2045</span>
+								<span class="column__text">133456</span>
+								<span class="column__text">Positive</span>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="grid__item grid__item--c2">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="img/2.png" alt="Image"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">exothermic</h3>
+							<div class="column column--left">
+								<span class="column__text">Period</span>
+								<span class="column__text">Subjects</span>
+								<span class="column__text">Result</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">2045</span>
+								<span class="column__text">133456</span>
+								<span class="column__text">Positive</span>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="grid__item grid__item--c3">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="img/3.png" alt="Image"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">diatomic</h3>
+							<div class="column column--left">
+								<span class="column__text">Period</span>
+								<span class="column__text">Subjects</span>
+								<span class="column__text">Result</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">2045</span>
+								<span class="column__text">133456</span>
+								<span class="column__text">Positive</span>
+							</div>
+						</div>
+					</a>
+				</div>
+			</section>
+			<section class="content">
+				<h2 class="content__title">_004</h2>
+				<div class="grid grid--effect-polaris">
+					<a href="#" class="grid__item grid__item--c1">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="img/1.png" alt="Image"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">anaerobic</h3>
+							<div class="column column--left">
+								<span class="column__text">Period</span>
+								<span class="column__text">Subjects</span>
+								<span class="column__text">Result</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">2045</span>
+								<span class="column__text">133456</span>
+								<span class="column__text">Positive</span>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="grid__item grid__item--c2">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="img/2.png" alt="Image"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">exothermic</h3>
+							<div class="column column--left">
+								<span class="column__text">Period</span>
+								<span class="column__text">Subjects</span>
+								<span class="column__text">Result</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">2045</span>
+								<span class="column__text">133456</span>
+								<span class="column__text">Positive</span>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="grid__item grid__item--c3">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="img/3.png" alt="Image"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">diatomic</h3>
+							<div class="column column--left">
+								<span class="column__text">Period</span>
+								<span class="column__text">Subjects</span>
+								<span class="column__text">Result</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">2045</span>
+								<span class="column__text">133456</span>
+								<span class="column__text">Positive</span>
+							</div>
+						</div>
+					</a>
+				</div>
+			</section>
+			<section class="content">
+				<h2 class="content__title">_005</h2>
+				<div class="grid grid--effect-alphard">
+					<a href="#" class="grid__item grid__item--c1">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="img/1.png" alt="Image"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">anaerobic</h3>
+							<div class="column column--left">
+								<span class="column__text">Period</span>
+								<span class="column__text">Subjects</span>
+								<span class="column__text">Result</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">2045</span>
+								<span class="column__text">133456</span>
+								<span class="column__text">Positive</span>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="grid__item grid__item--c2">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="img/2.png" alt="Image"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">exothermic</h3>
+							<div class="column column--left">
+								<span class="column__text">Period</span>
+								<span class="column__text">Subjects</span>
+								<span class="column__text">Result</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">2045</span>
+								<span class="column__text">133456</span>
+								<span class="column__text">Positive</span>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="grid__item grid__item--c3">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="img/3.png" alt="Image"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">diatomic</h3>
+							<div class="column column--left">
+								<span class="column__text">Period</span>
+								<span class="column__text">Subjects</span>
+								<span class="column__text">Result</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">2045</span>
+								<span class="column__text">133456</span>
+								<span class="column__text">Positive</span>
+							</div>
+						</div>
+					</a>
+				</div>
+			</section>
+			<section class="content">
+				<h2 class="content__title">_006</h2>
+				<div class="grid grid--effect-altair">
+					<a href="#" class="grid__item grid__item--c1">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="img/1.png" alt="Image"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">anaerobic</h3>
+							<div class="column column--left">
+								<span class="column__text">Period</span>
+								<span class="column__text">Subjects</span>
+								<span class="column__text">Result</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">2045</span>
+								<span class="column__text">133456</span>
+								<span class="column__text">Positive</span>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="grid__item grid__item--c2">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="img/2.png" alt="Image"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">exothermic</h3>
+							<div class="column column--left">
+								<span class="column__text">Period</span>
+								<span class="column__text">Subjects</span>
+								<span class="column__text">Result</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">2045</span>
+								<span class="column__text">133456</span>
+								<span class="column__text">Positive</span>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="grid__item grid__item--c3">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="img/3.png" alt="Image"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">diatomic</h3>
+							<div class="column column--left">
+								<span class="column__text">Period</span>
+								<span class="column__text">Subjects</span>
+								<span class="column__text">Result</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">2045</span>
+								<span class="column__text">133456</span>
+								<span class="column__text">Positive</span>
+							</div>
+						</div>
+					</a>
+				</div>
+			</section>
+			<section class="content">
+				<h2 class="content__title">_007</h2>
+				<div class="grid grid--effect-rigel">
+					<a href="#" class="grid__item grid__item--c1">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="img/1.png" alt="Image"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">anaerobic</h3>
+							<div class="column column--left">
+								<span class="column__text">Period</span>
+								<span class="column__text">Subjects</span>
+								<span class="column__text">Result</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">2045</span>
+								<span class="column__text">133456</span>
+								<span class="column__text">Positive</span>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="grid__item grid__item--c2">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="img/2.png" alt="Image"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">exothermic</h3>
+							<div class="column column--left">
+								<span class="column__text">Period</span>
+								<span class="column__text">Subjects</span>
+								<span class="column__text">Result</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">2045</span>
+								<span class="column__text">133456</span>
+								<span class="column__text">Positive</span>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="grid__item grid__item--c3">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="img/3.png" alt="Image"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">diatomic</h3>
+							<div class="column column--left">
+								<span class="column__text">Period</span>
+								<span class="column__text">Subjects</span>
+								<span class="column__text">Result</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">2045</span>
+								<span class="column__text">133456</span>
+								<span class="column__text">Positive</span>
+							</div>
+						</div>
+					</a>
+				</div>
+			</section>
+			<section class="content">
+				<h2 class="content__title">_008</h2>
+				<div class="grid grid--effect-pollux">
+					<a href="#" class="grid__item grid__item--c1">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="img/1.png" alt="Image"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">anaerobic</h3>
+							<div class="column column--left">
+								<span class="column__text">Period</span>
+								<span class="column__text">Subjects</span>
+								<span class="column__text">Result</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">2045</span>
+								<span class="column__text">133456</span>
+								<span class="column__text">Positive</span>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="grid__item grid__item--c2">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="img/2.png" alt="Image"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">exothermic</h3>
+							<div class="column column--left">
+								<span class="column__text">Period</span>
+								<span class="column__text">Subjects</span>
+								<span class="column__text">Result</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">2045</span>
+								<span class="column__text">133456</span>
+								<span class="column__text">Positive</span>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="grid__item grid__item--c3">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="img/3.png" alt="Image"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">diatomic</h3>
+							<div class="column column--left">
+								<span class="column__text">Period</span>
+								<span class="column__text">Subjects</span>
+								<span class="column__text">Result</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">2045</span>
+								<span class="column__text">133456</span>
+								<span class="column__text">Positive</span>
+							</div>
+						</div>
+					</a>
+				</div>
+			</section>
+			<section class="content content--padded">
+				<h2 class="content__title">_009</h2>
+				<div class="grid grid--effect-deneb">
+					<a href="#" class="grid__item grid__item--c1">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="img/1.png" alt="Image"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">anaerobic</h3>
+							<div class="column column--left">
+								<span class="column__text">Period</span>
+								<span class="column__text">Subjects</span>
+								<span class="column__text">Result</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">2045</span>
+								<span class="column__text">133456</span>
+								<span class="column__text">Positive</span>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="grid__item grid__item--c2">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="img/2.png" alt="Image"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">exothermic</h3>
+							<div class="column column--left">
+								<span class="column__text">Period</span>
+								<span class="column__text">Subjects</span>
+								<span class="column__text">Result</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">2045</span>
+								<span class="column__text">133456</span>
+								<span class="column__text">Positive</span>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="grid__item grid__item--c3">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="img/3.png" alt="Image"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">diatomic</h3>
+							<div class="column column--left">
+								<span class="column__text">Period</span>
+								<span class="column__text">Subjects</span>
+								<span class="column__text">Result</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">2045</span>
+								<span class="column__text">133456</span>
+								<span class="column__text">Positive</span>
+							</div>
+						</div>
+					</a>
+				</div>
+			</section>
+			<!-- Related demos -->
+			<section class="content content--related">
+				<p>Images made with designs by <a href="http://www.freepik.com/free-vector/new-year-party-brochure-with-colorful-geometric-shapes_997206.htm">Freepik.com</a></p>
+				<p>If you enjoyed this demo you might also like:</p>
+				<a class="media-item" href="https://tympanus.net/Development/TiltHoverEffects/">
+					<img class="media-item__img" src="img/related/TiltHoverEffects.jpg">
+					<h3 class="media-item__title">Tilt Hover Effects</h3>
+				</a>
+				<a class="media-item" href="https://tympanus.net/Development/HoverEffectIdeas/">
+					<img class="media-item__img" src="img/related/HoverEffectIdeas.jpg">
+					<h3 class="media-item__title">Hover Effect Ideas</h3>
+				</a>
+				<a class="media-item" href="https://tympanus.net/Development/LineMenuStyles/">
+					<img class="media-item__img" src="img/related/LineMenuStyles.jpg">
+					<h3 class="media-item__title">Line Menu Styles</h3>
+				</a>
+			</section>
+		</main>
+		<script src="js/anime.min.js"></script>
+		<script src="js/main.js"></script>
+		<script>
+		(function() {
+			[].slice.call(document.querySelectorAll('.grid--effect-vega > .grid__item')).forEach(function(stackEl) {
+				new VegaFx(stackEl);
+			});
+			[].slice.call(document.querySelectorAll('.grid--effect-castor > .grid__item')).forEach(function(stackEl) {
+				new CastorFx(stackEl);
+			});
+			[].slice.call(document.querySelectorAll('.grid--effect-hamal > .grid__item')).forEach(function(stackEl) {
+				new HamalFx(stackEl);
+			});
+			[].slice.call(document.querySelectorAll('.grid--effect-polaris > .grid__item')).forEach(function(stackEl) {
+				new PolarisFx(stackEl);
+			});
+			[].slice.call(document.querySelectorAll('.grid--effect-alphard > .grid__item')).forEach(function(stackEl) {
+				new AlphardFx(stackEl);
+			});
+			[].slice.call(document.querySelectorAll('.grid--effect-altair > .grid__item')).forEach(function(stackEl) {
+				new AltairFx(stackEl);
+			});
+			[].slice.call(document.querySelectorAll('.grid--effect-rigel > .grid__item')).forEach(function(stackEl) {
+				new RigelFx(stackEl);
+			});
+			[].slice.call(document.querySelectorAll('.grid--effect-pollux > .grid__item')).forEach(function(stackEl) {
+				new PolluxFx(stackEl);
+			});
+			[].slice.call(document.querySelectorAll('.grid--effect-deneb > .grid__item')).forEach(function(stackEl) {
+				new DenebFx(stackEl);
+			});
+		})();
+		</script>
+	</body>
+</html>
