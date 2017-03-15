@@ -356,6 +356,20 @@ a:focus {
 	opacity: 1;
 }
 
+/* Canopus */
+.grid--effect-canopus {
+	perspective-origin: 50% 0%;
+}
+
+.grid--effect-canopus .column {
+	opacity: 1;
+}
+
+.grid--effect-canopus .stack__figure,
+.grid--effect-canopus .stack__deco {
+	transform-origin: 50% 100%;
+}
+
 /* pollux */
 .grid--effect-pollux {
 	perspective: 1000px;
